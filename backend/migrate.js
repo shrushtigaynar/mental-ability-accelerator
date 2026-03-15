@@ -19,7 +19,6 @@ async function migrate() {
     INSERT INTO topics (name, mode_id) VALUES ('Percentages', 1), ('Profit & Loss', 1), ('Time & Work', 1), ('Time, Speed & Distance', 1), ('Ratio & Proportion', 1), ('Number Series', 2), ('Missing Number Pattern', 2), ('Alphabet Series', 2), ('Analogy', 2), ('Odd One Out', 2), ('Blood Relations', 3), ('Coding-Decoding', 3), ('Direction Sense', 3), ('Syllogisms', 3), ('Statement & Conclusion', 3) ON CONFLICT DO NOTHING;
   `);
   console.log('Migration complete!');
-  process.exit(0);
 }
 
-migrate().catch(e => { console.error(e.message); process.exit(1); });
+migrate().catch(e => { console.error(e.message); });
