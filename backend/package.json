@@ -1,20 +1,14 @@
 {
   "name": "mental-ability-accelerator-backend",
   "version": "1.0.0",
-  "description": "Backend for the Mental Ability Accelerator Micro-SaaS (Node.js, Express, PostgreSQL, JWT, MVC).",
+  "description": "Backend for the Mental Ability Accelerator Micro-SaaS",
   "main": "server/server.js",
   "scripts": {
-    "start": "node migrate.js && node server/server.js",
+    "start": "node server/server.js",
     "dev": "nodemon server/server.js",
     "migrate": "node migrate.js"
   },
-  "keywords": [
-    "micro-saas",
-    "express",
-    "postgresql",
-    "jwt",
-    "mental-ability-accelerator"
-  ],
+  "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -35,10 +29,3 @@
     "node": ">=18.0.0"
   }
 }
-```
-
----
-
-Then go to Render → **maa-backend** → **Settings** → find **Start Command** → change it to:
-```
-npm start
