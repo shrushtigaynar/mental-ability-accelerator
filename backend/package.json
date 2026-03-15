@@ -4,8 +4,9 @@
   "description": "Backend for the Mental Ability Accelerator Micro-SaaS (Node.js, Express, PostgreSQL, JWT, MVC).",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js"
+    "start": "node migrate.js && node server/server.js",
+    "dev": "nodemon server/server.js",
+    "migrate": "node migrate.js"
   },
   "keywords": [
     "micro-saas",
@@ -34,3 +35,10 @@
     "node": ">=18.0.0"
   }
 }
+```
+
+---
+
+Then go to Render → **maa-backend** → **Settings** → find **Start Command** → change it to:
+```
+npm start

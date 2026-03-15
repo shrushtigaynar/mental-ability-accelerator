@@ -1,5 +1,4 @@
 require('dotenv').config();
-require('../migrate');
 
 const http = require('http');
 const { Server: SocketServer } = require('socket.io');
