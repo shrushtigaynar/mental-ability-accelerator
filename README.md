@@ -61,7 +61,7 @@ mental-ability-accelerator/
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/mental-ability-accelerator.git
+git clone https://github.com/shrushtigaynar/mental-ability-accelerator.git
 
 # Install backend dependencies
 cd backend && npm install
